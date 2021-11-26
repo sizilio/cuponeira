@@ -10,7 +10,7 @@ function Home ({products}: any) {
 
         <div className="products">
           {products.map((product: any) => (
-            <Product product={product} />
+            <Product key={product.id} product={product} />
           ))}
         </div>
       </div>
