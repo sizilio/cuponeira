@@ -9,7 +9,9 @@ export default function Product ({product}: any) {
             <BoxContent>
                 <BoxImg>
                     <Link href={"/products/" + product.id} passHref>
-                        <img src={product.image} />
+                        <a>
+                            <img src={product.image} alt={product.title} />
+                        </a>
                     </Link>
                 </BoxImg>
                 <BoxTitle>{product.title}</BoxTitle>

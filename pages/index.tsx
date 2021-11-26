@@ -1,7 +1,7 @@
 import Head from '../src/partials/head'
 import Product from '../src/components/Product'
 
-function Home ({products}: any) {
+function Home({ products }: any) {
   return (
     <>
       <Head title="Cuponeira" description="Página inicial da Cuponeira" />
@@ -21,6 +21,7 @@ function Home ({products}: any) {
 export async function getStaticProps() {
   const res = await fetch('https://fakestoreapi.com/products')
   const products = await res.json()
+
   return {
     props: {
       products
