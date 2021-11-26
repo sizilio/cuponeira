@@ -12,7 +12,7 @@ function Product({product}: any) {
 }
 
 // This gets called on every request
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
     const { id } = context.query;
 
     const res = await fetch('https://fakestoreapi.com/products/' + id)
