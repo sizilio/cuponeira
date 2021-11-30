@@ -6,6 +6,7 @@ function Product({product}: any) {
             <Head title={product.title} description={product.description} />
             <div className="container">
                 {product.title}
+                {product.image}
             </div>
         </>
     )

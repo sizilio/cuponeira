@@ -1,5 +1,4 @@
 import { Box, BoxContent, BoxImg, BoxTitle, BoxPrice, BoxLink } from './styles'
-import Image from 'next/image'
 import Link from 'next/link'
 
 // Component
